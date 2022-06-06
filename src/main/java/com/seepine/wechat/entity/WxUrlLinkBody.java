@@ -10,10 +10,10 @@ import java.io.Serializable;
 @Builder
 public class WxUrlLinkBody implements Serializable {
   static final long serialVersionUID = 0L;
-  /** 通过 URL Link 进入的小程序页面路径，必须是已经发布的小程序存在的页面，不可携带 query 。path 为空时会跳转小程序主页 */
+  /** 通过 URL Link 进入的小程序页面路径,必须是已经发布的小程序存在的页面，不可携带 query 。path 为空时会跳转小程序主页 */
   String path;
 
-  /** 通过 URL Link 进入小程序时的query, 最大1024个字符, 只支持数字, 大小写英文以及部分特殊字符：!#$&'()*+,/:;=?@-._~% */
+  /** 通过 URL Link 进入小程序时的query,最大1024个字符,只支持数字,大小写英文以及部分特殊字符 */
   String query;
   /**
    * 要打开的小程序版本。默认未正式版 "release"，体验版为"trial"，开发版为"develop"，仅在微信外打开时生效。体验版和开发版仅在iOS上支持，Android将在近期支持。

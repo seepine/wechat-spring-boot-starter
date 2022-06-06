@@ -11,12 +11,7 @@ import java.io.Serializable;
 public class WxUnlimitedBody implements Serializable {
   static final long serialVersionUID = 0L;
 
-  /**
-   * 必填
-   *
-   * <p>最大32个可见字符，只支持数字，大小写英文以及部分特殊字符：!#$&'()*+,/:;=?@-._~，其它字符请自行编码为合法字符（因不支持%，中文无法使用 urlencode
-   * 处理，请使用其他编码方式）
-   */
+  /** 必填,最大32个可见字符,eg:a=1 */
   String scene;
   /** 页面 page，例如 pages/index/index，根路径前不要填加 /，不能携带参数（参数请放在scene字段里），如果不填写这个字段，默认跳主页面 */
   String page;

@@ -94,6 +94,7 @@ public class WeChatTemplate implements InitializingBean {
   /**
    * 通过code获取没有区号的手机号
    *
+   * @param accessToken accessToken
    * @param code 手机号获取凭证
    * @return 没有区号的手机号
    * @throws WeChatException exception
@@ -105,6 +106,7 @@ public class WeChatTemplate implements InitializingBean {
   /**
    * 通过code获取手机号
    *
+   * @param accessToken accessToken
    * @param code 手机号获取凭证
    * @return 手机号
    * @throws WeChatException exception
@@ -132,7 +134,7 @@ public class WeChatTemplate implements InitializingBean {
    * 生成小程序码
    *
    * @param accessToken accessToken
-   * @param scene eg:a=1&b=2
+   * @param scene a=1
    * @param page 页面
    * @return 图片数据
    * @throws WeChatException exception
@@ -167,6 +169,7 @@ public class WeChatTemplate implements InitializingBean {
   /**
    * 发送消息订阅
    *
+   * @param accessToken accessToken
    * @param body body
    * @throws WeChatException e
    */
@@ -182,7 +185,9 @@ public class WeChatTemplate implements InitializingBean {
   /**
    * 获取小程序 scheme Link
    *
+   * @param accessToken accessToken
    * @param body body
+   * @return schemeLink
    * @throws WeChatException e
    */
   public String generateSchemeLink(String accessToken, WxSchemeLinkBody body)
@@ -197,10 +202,13 @@ public class WeChatTemplate implements InitializingBean {
     Assert.hasText(urlLink, "生成urlLink失败");
     return urlLink;
   }
+
   /**
    * 获取小程序 URL Link
    *
+   * @param accessToken accessToken
    * @param body body
+   * @return urlLink
    * @throws WeChatException e
    */
   public String generateUrlLink(String accessToken, WxUrlLinkBody body) throws WeChatException {

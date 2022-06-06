@@ -6,7 +6,7 @@
 
 	<groupId>com.seepine</groupId>
 	<artifactId>wechat-spring-boot-starter</artifactId>
-	<version>1.4.0-alpha.2</version>
+	<version>1.4.0-alpha.3</version>
 
 	<name>wechat-spring-boot-starter</name>
 	<url>https://github.com/seepine/wechat-spring-boot-starter</url>
@@ -36,8 +36,8 @@
 	</scm>
 
 	<properties>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>8</maven.compiler.source>
+		<maven.compiler.target>8</maven.compiler.target>
 
 		<http.version>0.1.0</http.version>
 		<json.version>0.0.2</json.version>
@@ -163,6 +163,21 @@
 			<plugin>
 				<groupId>org.sonatype.plugins</groupId>
 				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<inherited>false</inherited>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<inherited>false</inherited>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<inherited>false</inherited>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
 				<inherited>false</inherited>
 			</plugin>
 		</plugins>
