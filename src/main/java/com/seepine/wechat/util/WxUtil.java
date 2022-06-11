@@ -19,7 +19,6 @@ public class WxUtil {
       if (errCode != 0) {
         throw new WeChatException(errCode, res.get(ERR_MSG).asText(), "请求失败");
       }
-      throw new WeChatException("请求失败");
     }
     return res;
   }
