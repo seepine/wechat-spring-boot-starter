@@ -21,7 +21,7 @@
 <dependency>
   <groupId>com.seepine</groupId>
   <artifactId>wechat-spring-boot-starter</artifactId>
-  <version>1.4.0</version>
+  <version>${latest.version}</version>
 </dependency>
 ```
 

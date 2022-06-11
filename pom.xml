@@ -6,7 +6,7 @@
 
 	<groupId>com.seepine</groupId>
 	<artifactId>wechat-spring-boot-starter</artifactId>
-	<version>1.4.0-alpha.4</version>
+	<version>1.4.0-alpha.5</version>
 
 	<name>wechat-spring-boot-starter</name>
 	<url>https://github.com/seepine/wechat-spring-boot-starter</url>
@@ -44,7 +44,7 @@
 		<project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
 
 		<http.version>0.1.0</http.version>
-		<json.version>0.0.2</json.version>
+		<json.version>0.1.0</json.version>
 		<spring-boot.version>2.7.0</spring-boot.version>
 	</properties>
 
