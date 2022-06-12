@@ -6,7 +6,7 @@
 
 	<groupId>com.seepine</groupId>
 	<artifactId>wechat-spring-boot-starter</artifactId>
-	<version>1.4.0-alpha.5</version>
+	<version>1.4.0-alpha.6</version>
 
 	<name>wechat-spring-boot-starter</name>
 	<url>https://github.com/seepine/wechat-spring-boot-starter</url>
